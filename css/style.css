@@ -73,6 +73,14 @@ header h1 {
   text-align: center;
 }
 
+header h2 {
+  margin-left: 20px;
+  width: 860px;
+  text-align: center;
+  font-size: 24px
+
+}
+
 .map-page header {
   padding: 0;
   height: 112px;
@@ -97,13 +105,13 @@ nav {
   width: 80px;
 }
 
-nav li {
+nav div {
   position: relative;
   width: 60px;
   text-align: center;
 }
 
-nav li a {
+nav div a {
   display: inline-block;
   text-decoration: none;
   line-height: 40px;
@@ -111,13 +119,13 @@ nav li a {
   font-size: 18px;
 }
 
-nav li a:hover::before {
+nav div a:hover::before {
   position: absolute;
   top: 0;
   left: 100%;
 }
 
-nav li.current a::before {
+nav div.current a::before {
   width: 0;
   height: 0;
   content: '';
@@ -131,39 +139,39 @@ nav li.current a::before {
   left: 100%;
 }
 
-nav li.current:nth-child(1) a::before {
+nav div.current:nth-child(1) a::before {
   border-left-color: #f5a3b0;
 }
 
-nav li.current:nth-child(2) a::before {
+nav div.current:nth-child(2) a::before {
   border-left-color: #9cc5d7;
 }
 
-nav li.current:nth-child(3) a::before {
+nav div.current:nth-child(3) a::before {
   border-left-color: #f7f3ac;
 }
 
-nav li.current:nth-child(4) a::before {
+nav div.current:nth-child(4) a::before {
   border-left-color: #c6a2f5;
 }
 
-nav li.current:nth-child(5) a::before {
+nav div.current:nth-child(5) a::before {
   border-left-color: #9cd7ab;
 }
 
-nav li.current:nth-child(6) a::before {
+nav div.current:nth-child(6) a::before {
   border-left-color: #f7d5a7;
 }
 
-nav li.current:nth-child(7) a::before {
+nav div.current:nth-child(7) a::before {
   border-left-color: #f79cd0;
 }
 
-nav li:nth-child(1) {
+nav div:nth-child(1) {
   background-color: #f5a3b0;
 }
 
-nav li:nth-child(1) a:hover::before {
+nav div:nth-child(1) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -174,11 +182,11 @@ nav li:nth-child(1) a:hover::before {
   border-left-color: #f5a3b0;
 }
 
-nav li:nth-child(2) {
+nav div:nth-child(2) {
   background-color: #9cc5d7;
 }
 
-nav li:nth-child(2) a:hover::before {
+nav div:nth-child(2) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -189,11 +197,11 @@ nav li:nth-child(2) a:hover::before {
   border-left-color: #9cc5d7;
 }
 
-nav li:nth-child(3) {
+nav div:nth-child(3) {
   background-color: #f7f3ac;
 }
 
-nav li:nth-child(3) a:hover::before {
+nav div:nth-child(3) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -204,11 +212,11 @@ nav li:nth-child(3) a:hover::before {
   border-left-color: #f7f3ac;
 }
 
-nav li:nth-child(4) {
+nav div:nth-child(4) {
   background-color: #c6a2f5;
 }
 
-nav li:nth-child(4) a:hover::before {
+nav div:nth-child(4) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -219,11 +227,11 @@ nav li:nth-child(4) a:hover::before {
   border-left-color: #c6a2f5;
 }
 
-nav li:nth-child(5) {
+nav div:nth-child(5) {
   background-color: #9cd7ab;
 }
 
-nav li:nth-child(5) a:hover::before {
+nav div:nth-child(5) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -234,11 +242,11 @@ nav li:nth-child(5) a:hover::before {
   border-left-color: #9cd7ab;
 }
 
-nav li:nth-child(6) {
+nav div:nth-child(6) {
   background-color: #f7d5a7;
 }
 
-nav li:nth-child(6) a:hover::before {
+nav div:nth-child(6) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -249,11 +257,11 @@ nav li:nth-child(6) a:hover::before {
   border-left-color: #f7d5a7;
 }
 
-nav li:nth-child(7) {
+nav div:nth-child(7) {
   background-color: #f79cd0;
 }
 
-nav li:nth-child(7) a:hover::before {
+nav div:nth-child(7) a:hover::before {
   width: 0;
   height: 0;
   content: '';
@@ -267,6 +275,9 @@ nav li:nth-child(7) a:hover::before {
 main {
   background-color: #e3e3e3;
   padding-top: 46.4px;
+  padding-right: 46.4px
+  padding-bottom: 46.4px
+  padding-left: 46.4px
   width: 860px;
 }
 
@@ -278,10 +289,6 @@ main p {
 }
 
 main ul {
-  background-color: #f0f0f0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 80px;
   counter-reset: listStyle;
 }
 
